@@ -3,15 +3,21 @@
 ---
 
 ## 📑 Pré requisitos
-- Ter o **Docker** instalado na sua maquina. 
-- 👉 [Baixe aqui o Docker Desktop]( https://www.docker.com/products/docker-desktop/)
+- VScode(para visualizar o banco e rodar as queries)
+- Extensão [Sqlite] (https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)  
 
 ---
 
 ## 🔧 Como rodar o projeto? 
 
-1. Clone esses repositório:
+### Rodar diretamente no Vscode
+
+1. Clone o repositório:
 ``` bash
 git clone https://github.com/rafaelMachado1891/acelera.git
+```
+2. Abra o arquivo desafio-01.sql e digite ctrl+shift+Q 
 
-## No terminal rode docker build -t
+---
+
+## Especificações do projeto
