@@ -1,0 +1,40 @@
+services:
+  db:
+    container_name: postgres_db
+    image: postgres:latest
+    environment:
+      POSTGRES_DB: desafio_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+      - ./db.sql:/docker-entrypoint-initdb.d/db.sql
+    ports:
+      - 55432:5432
+    networks:
+      - db_net
+
+  pgadmin:
+    container_name: pgadmin_web
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: pgadmin4@pgadmin.org
+      PGADMIN_DEFAULT_PASSWORD: postgres
+      PGADMIN_LISTEN_PORT: 5050
+      PGADMIN_CONFIG_SERVER_MODE: 'False'
+    volumes:
+      - pgadmin_data:/var/lib/pgadmin
+      - ./files:/files
+    ports:
+      - 5050:5050
+    networks:
+      - db_net
+
+networks:
+  db_net:
+    driver: bridge
+
+volumes:
+  pgadmin_data:
+  postgresql_data:
+ 
