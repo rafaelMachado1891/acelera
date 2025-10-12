@@ -38,13 +38,17 @@ Após subir o container você pode utilizar o pgadmin para acessar o banco de da
 ---
 ### Passo a Passo para conectar com o banco
 
-### 1️⃣ ![senha master para acesso ao banco](files/image-01.png)
+### ![senha master para acesso ao banco](files/image-01.png)
+```
  senha = postgres
+```
 ---
-### 2️⃣ ![credencias para acessar o banco](files/image-02.png)
+### ![credencias para acessar o banco](files/image-02.png)
 
+```
 utilize as credencias acima para conectar no banco 👆
 password = postgres
+```
 ---
 
 ### 3️⃣ Com o banco conectado copie e rode a query abaixo para gerar a procedure
