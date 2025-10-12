@@ -31,6 +31,23 @@ cd desafio-02
 ```
 docker compose up -d
 ```
+---
+
+Após subir o container você pode utilizar o pgadmin para acessar o banco de dados através do link [pgadmin](http://localhost:5050/browser/).
+
+---
+### Passo a Passo para conectar com o banco
+
+### 1️⃣ ![senha master para acesso ao banco](desafio-02/files/imagem-01.png)
+postgres
+
+### 2️⃣ ![credencias para acessar o banco](desafio-02/files/imagem-02.png)
+
+utilize as credencias acima para conectar no banco 👆
+
+### 3️⃣ Com o banco conectado copie e rode a query abaixo para gerar a procedure
+
+
 ### Store procedure
 ```
 CREATE OR REPLACE PROCEDURE public.sp_matricula_aluno(
@@ -87,4 +104,10 @@ BEGIN
 
 END
 $$;
+```
 
+### 4️⃣ Execute a procedure com o comando: 
+```
+CALL sp_matricula_aluno('nome_aluno','nome_do_curso')
+
+```
