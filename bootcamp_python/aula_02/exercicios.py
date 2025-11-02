@@ -1,6 +1,13 @@
 # #### Inteiros (`int`)
 
 # 1. Escreva um programa que soma dois números inteiros inseridos pelo usuário.
+valor_1: int = int(input('Digite o primeiro valor: '))
+
+valor_2: int = int(input('Digite o segundo valor: '))
+
+total: int = valor_1 + valor_2
+
+print(f'A soma dos valores é {total}')
 # 2. Crie um programa que receba um número do usuário e calcule o resto da divisão desse número por 5.
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
