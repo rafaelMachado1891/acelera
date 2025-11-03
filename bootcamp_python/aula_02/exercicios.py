@@ -35,6 +35,11 @@
 # print(f"A divisao inteira de {valor_01} por {valor_02} é {resultado}")
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
+# valor: int = int(input('Digite um valor: '))
+
+# resultado = valor ** 2 
+
+# print(f'A resultado de {valor} elevado ao quadraro é {resultado}')
 
 # #### Números de Ponto Flutuante (`float`)
 
