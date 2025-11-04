@@ -53,15 +53,38 @@
 # print(f'A soma dos valores {valor_01} e {valor_02} é {resultado}')
 
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
-valor_01: float = float(input('Digite o primeiro valor: '))
+# valor_01: float = float(input('Digite o primeiro valor: '))
 
-valor_02: float = float(input('Digite o segundo valor: '))
+# valor_02: float = float(input('Digite o segundo valor: '))
 
-resultado = (valor_01 + valor_02) / 2
+# resultado = (valor_01 + valor_02) / 2
 
-print(f'A media dos valores {valor_01} e {valor_02} é {resultado}')
+# print(f'A media dos valores {valor_01} e {valor_02} é {resultado}')
 
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+numero = False
+potencia = False
+
+while numero is not True: 
+    try: 
+        numero_usuario: float = float(input("digite um numero: "))
+        numero = True 
+        
+    except ValueError as e:
+        print('você digitou um valor invalido para numero')
+        
+while potencia is not True:   
+    try:
+        potencia_usuario: int = int(input("a qual potencia você deseja elevar?: "))
+        potencia = True
+        
+    except ValueError as e:
+        print(f'o valor informado não é um valor valido para potencia')    
+        
+resultado: float = numero_usuario ** potencia_usuario
+
+print(f"o resultado de {numero_usuario} elevado a {potencia_usuario} é {resultado} ")
+
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
