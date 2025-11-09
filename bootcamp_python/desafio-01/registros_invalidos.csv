@@ -1,0 +1,7 @@
+id,nome,area,salario,bonus_percentual,erro
+3,Carla Mota,Financeiro,0,0.2,O salário deve ser maior que zero.
+4,Daniel 9,TI,5200,0.1,O campo nome não pode conter dígitos.
+5,,RH,3800,0.15,O campo nome não pode estar vazio.
+6,Elisa Prado,Financeiro,6100,-0.05,O percentual deve estar entre 0 e 1.
+8,João Silva,Operações,5300,abc,O departamento informado não é válido.
+10,Pedro Santos,Operações,5100,0.08,O departamento informado não é válido.
